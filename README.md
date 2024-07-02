@@ -9,7 +9,7 @@ This project demonstrates the application of Deep Reinforcement Learning (DRL) f
 - [`Data/`]: Contains the UIT-VSFC dataset divided into training, validation, and test sets.
 - [`Images/`]: Directory for storing images, such as plots or diagrams, generated during analysis or model training.
 - [`Model/`]: Contains saved models and checkpoints.
-- [`Notebook/`]: Jupyter notebooks used for model development, training, and evaluation.
+- [`Notebook/`]: Jupyter notebooks are used for model development, training, and evaluation.
 - [`Report/`]: Documentation and reports related to the project.
 - [`src/`]: Source code including utility functions, model definitions, and environment configurations.
 - [`requirement.txt`]: Lists all the dependencies required to run the project.
@@ -26,13 +26,17 @@ This project demonstrates the application of Deep Reinforcement Learning (DRL) f
    ```shell
    jupyter notebook
    ```
-5. Open the `DRL_SENTIMENT_ANALYSIS_UIT_VSFC.ipynb` notebook to start exploring the project.
+5. Open the notebooks to start exploring the project.
 
 ### Usage
 
-The main notebook `DRL_SENTIMENT_ANALYSIS_UIT_VSFC.ipynb` guides you through the process of loading the data, preprocessing, model training, and evaluation. Follow the steps in the notebook for a detailed walkthrough.
+The notebooks guide you through the process of loading the data, preprocessing, model training, and evaluation. Follow the steps in the notebook for a detailed walkthrough.
 
 ### Data
+
+The default dataset is structured as follows:
+- `Processed/`: Preprocessed data.
+- `Raw/`: Raw collected data.
 
 The UIT-VSFC dataset is structured as follows:
 - `train/`: Training data.
@@ -45,19 +49,9 @@ Each directory contains:
 
 ### Model
 
-This project uses the `vinai/phobert-base-v2` model from Hugging Face's Transformers library as the backbone for sentiment analysis. The model is fine-tuned on the UIT-VSFC dataset for the specific task of sentiment classification.
-
-### Contributing
-
-Contributions to this project are welcome. Please feel free to fork the repository, make changes, and submit a pull request.
-
-### License
-
-This project is open-sourced under the MIT License. See the LICENSE file for more details.
+This project uses the `vinai/phobert-base-v2` model from Hugging Face's Transformers library as the feature extraction for sentiment classification.
 
 ### Acknowledgments
-
-- The UIT-VSFC dataset is provided by the University of Information Technology, VNU-HCM.
+- The default data belongs to Phenikaa University.
+- The UIT datasets are provided by the University of Information Technology, VNU-HCM.
 - The PhoBERT model is developed by VinAI Research.
-
-For any queries or suggestions, please open an issue in the repository.
