@@ -1,0 +1,11 @@
+polars
+pandas
+underthesea
+underthesea[deep]
+underthesea[prompt]
+wordcloud
+matplotlib
+tensorflow
+torch 
+torchvision 
+torchaudio
